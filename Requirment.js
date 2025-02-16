@@ -5,7 +5,6 @@
 */
 
 class point {
-  //constructs the point class
   constructor(coordX, coordY) {
     this.coordX = coordX;
     this.coordY = coordY;
@@ -15,7 +14,7 @@ class point {
 class Rectangle {
   constructor(startingPoint, width, height) {
     if (!height || height <= 0 || !width || width <= 0) {
-      throw Error("invalid Width and Height"); // make sure that the height & width are set and with positive values, otherwise throw an error
+      throw Error("invalid Width and Height"); // throws an error in case of width or height are not set or less than 0
     }
     this.startingPoint = startingPoint;
     this.width = width;
